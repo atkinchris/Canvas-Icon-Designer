@@ -2,7 +2,6 @@ html,
 body {
 	height: 100%;
 	width: 100%;
-	display: inline;
 }
 
 .drawing-canvas {
@@ -14,7 +13,7 @@ body {
 .container {
 	height: 100%;
 	width: 40%;
-	display: flex;
+	display: inline-flex;
 	flex-direction: column;
 	justify-content: space-around;
 }
