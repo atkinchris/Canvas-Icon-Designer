@@ -10,27 +10,37 @@
 <body>
     <div id="main-container">
         <div class="container">
-            <canvas id="icon-pass" class="drawing-canvas"></canvas>
-            <canvas id="icon-fail" class="drawing-canvas"></canvas>
+            <div class="drawing-canvas">
+                <img src="tick.png" alt="Tick">
+                <canvas id="canvas-pass" width="400px" height="400px"></canvas>
+            </div>
+            <div class="drawing-canvas">
+                <img src="cross.png" alt="Cross">
+                <canvas id="canvas-fail" width="400px" height="400px"></canvas>
+            </div>
         </div>
         <div class="container">
             <div id="phone-frame">
-            	<div id="phone-content">
-            		<div class="phone-header">
-            			<h4>Sainsbury's Checks App</h4>
-            		</div>
-            		<div class="phone-body">
-            			<h4>Question 1</h4>
-            			<p>Are the shelves clean and full of food?</p>
-            		</div>
-            		<div class="phone-buttons">
-            			<h4>Pass</h4>
-            			<h4>Fail</h4>
-            		</div>
-            	</div>
+                <div id="phone-content">
+                    <div class="phone-header">
+                        <h4>Sainsbury's Checks App</h4>
+                    </div>
+                    <div class="phone-body">
+                        <h4>Question 1</h4>
+                        <p>Are the shelves clean and full of food?</p>
+                    </div>
+                    <div class="phone-buttons">
+                    	<canvas id="image-pass" width="110px" height="110px"></canvas>
+                    	<canvas id="image-fail" width="110px" height="110px"></canvas>
+                    </div>
+                </div>
+                <div id="phone-home-button" onclick="updateImages()"></div>
             </div>
         </div>
     </div>
+    <script src="jquery-2.1.4.min.js"></script>
+    <script src="sketch.min.js"></script>
+    <script src="scripts.js"></script>
 </body>
 
 </html>
