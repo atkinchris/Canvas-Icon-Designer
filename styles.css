@@ -31,25 +31,27 @@ p {
 }
 
 .drawing-canvas {
+    border: 1px solid;
+    background-color: #EEEEEE;
+    background-size: cover;
+    position: relative;
     width: 400px;
     height: 400px;
-    border: 1px solid;
-    background-color: #DDDDDD;
-    background-size: cover;
 }
 
-#icon-pass {
-	background-image: url("tick.png");
-}
-
-#icon-fail {
-	background-image: url("cross.png");
+.drawing-canvas * {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	left: 0;
 }
 
 #phone-frame {
     background-image: url("iphone.png");
+    background-size: cover;
     width: 323px;
     height: 649px;
+    position: relative;
 }
 
 #phone-content {
@@ -94,7 +96,19 @@ p {
 }
 
 #phone-content .phone-buttons {
+	background-color: transparent;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 0;
+}
+
+#phone-content .phone-buttons>canvas {
+    background-color: #FFFFFF;	
+}
+
+#phone-home-button {
+	width: 77px;
+	height: 77px;
+	margin: 75px auto;
 }
