@@ -1,25 +1,34 @@
 html,
 body {
-	height: 100%;
-	width: 100%;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-color: #CCC;
 }
 
-.drawing-canvas {
-	width: 150px;
-	height: 150px;
-	background-color: grey;
+#main-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 .container {
-	height: 100%;
-	width: 40%;
-	display: inline-flex;
-	flex-direction: column;
-	justify-content: space-around;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.drawing-canvas {
+    width: 400px;
+    height: 400px;
+    background-color: grey;
 }
 
 #phone-frame {
-	background-image: url("iphone.png");
-	width: 300px;
-	height: 300px;
+    background-image: url("iphone.png");
+    width: 323px;
+    height: 649px;
 }
